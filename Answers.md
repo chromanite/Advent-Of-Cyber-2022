@@ -74,3 +74,32 @@
 --- 
 
 ## Day 6
+1. What is the email address of the sender?
+> chief.elf@santaclaus.thm
+
+2. What is the return address?
+> murphy.evident@bandityeti.thm
+
+3. On whose behalf was the email sent?
+> Chief Elf
+
+4. What is the X-spam score?
+> 3
+
+5. What is hidden in the value of the Message-ID field?
+> AoC2022_Email_Analysis
+
+6. Visit the email reputation check website provided in the task. What is the reputation result of the sender's email address?
+> RISKY
+
+7. Check the attachments. What is the filename of the attachment?
+> Division_of_labour-Load_share_plan.doc
+
+8. What is the hash value of the attachment?
+> 0827bb9a2e7c0628b82256759f0f888ca1abd6a2d903acdb8e44aca6a1a03467
+
+9. Visit the Virus Total website and use the hash value to search. Navigate to the behaviour section. What is the second tactic marked in the Mitre ATT&CK section?
+> Defense Evasion
+
+10. Visit the InQuest website and use the hash value to search. What is the subcategory of the file?
+> macro_hunter
