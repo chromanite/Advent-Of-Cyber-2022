@@ -103,3 +103,435 @@
 
 10. Visit the InQuest website and use the hash value to search. What is the subcategory of the file?
 > macro_hunter
+
+---
+## Day 7
+
+1. What is the version of CyberChef found in the attached VM?
+> 9.49.0
+
+2. How many recipes were used to extract URLs from the malicious doc?
+> 10
+
+3. We found a URL that was downloading a suspicious file; what is the name of that malware?
+> mysterygift.exe
+
+4. What is the last defanged URL of the bandityeti domain found in the last step?
+> https[://]cdn[.]bandityeti[.]THM/files/index/
+
+5. What is the ticket found in one of the domains? (Format: Domain/<GOLDEN_FLAG>)
+> THM_MYSTERY_FLAG
+
+---
+
+## Day 8
+
+1. What flag is found after attacking the provided EtherStore Contract?
+> flag{411_ur_37h_15_m1n3}
+
+---
+
+## Day 9
+
+1. Deploy the attached VM, and wait a few minutes. What ports are open?
+> 80
+
+2. What framework is the web application developed with?
+> laravel
+
+3. What command can be used to upgrade the last opened session to a Meterpreter session?
+> sessions -u -1
+
+4. What file indicates a session has been opened within a Docker container?
+> /.dockerenv
+
+5. What file often contains useful credentials for web applications?
+> .env
+
+6. What database table contains useful credentials?
+> users
+
+7. What is Santa's password?
+> p4$$w0rd
+
+8. What ports are open on the host machine?
+> 22,80
+
+9. What is the root flag?
+> THM{47C61A0FA8738BA77308A8A600F88E4B}
+
+--- 
+
+## Day 10
+
+1. What is the Guard's flag?
+> THM{5_star_Fl4gzzz}
+
+3. What is the Yeti's flag?
+> THM{yetiyetiyetiflagflagflag}
+
+---
+
+## Day 11
+
+1. What is the Windows version number that the memory image captured?
+Note: this initial scan may take up towards 10 minutes to complete. Why not grab some water or stretch your legs?
+
+> 10
+
+2. What is the name of the binary/gift that secret Santa left?
+> mysterygift.exe
+
+3. What is the Process ID (PID) of this binary?
+> 2040
+
+4. Dump the contents of this binary. How many files are dumped?
+> 16
+
+---
+
+## Day 12
+
+1. What is the architecture of the malware sample? (32-bit/64-bit)
+> 64-bit
+
+2. What is the packer used in the malware sample? (format: lowercase)
+> upx
+
+3. What is the compiler used to build the malware sample? (format: lowercase)
+> nim
+
+4. How many MITRE ATT&CK techniques have been discovered attributed to the DISCOVERY tactic?
+> 2
+
+5. What is the registry key abused by the malware?
+> HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+
+6. What is the value written on the registry key based on the previous question?
+> C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\wishes.bat
+
+7. What are the names of two files created by the malware under the C:\Users\Administrator\ directory? (format: file1,file2 in alphabetical order)
+> test.jpg,wishes.bat
+
+8. What are the two domains wherein malware has initiated a network connection? (format: domain1,domain2 in alphabetical order)
+> bestfestivalcompany.thm,virustotal.com
+
+9. Going back to strings inside the malware sample, what is the complete URL used to download the file hosted in the first domain accessed by the malware?
+> http://bestfestivalcompany.thm/favicon.ico
+
+---
+
+## Day 13
+
+1. View the "Protocol Hierarchy" menu.
+What is the "Percent Packets" value of the "Hypertext Transfer Protocol"?
+
+> 0.3
+
+2. View the "Conversations".
+Navigate to the TCP section.
+
+Which port number has received more than 1000 packets?
+
+> 3389
+
+3. What is the service name of the used protocol that received more than 1000 packets?
+> RDP
+
+4. Filter the DNS packets.
+
+What are the domain names?
+Enter the domains in alphabetical order and defanged format. (format: domain[.]zzz,domain[.]zzz)
+
+> bestfestivalcompany[.]thm,cdn[.]bandityeti[.]thm
+
+5. Filter the HTTP packets.
+
+What are the names of the requested files?
+Enter the names in alphabetical order and in defanged format. (format: file[.]xyz,file[.]xyz)
+
+> favicon[.]ico,mysterygift[.]exe
+
+6. Which IP address downloaded the executable file?
+Enter your answer in defanged format.
+
+> 10[.]10[.]29[.]186
+
+7. Which domain address hosts the malicious file?
+Enter your answer in defanged format.
+
+> cdn[.]bandityeti[.]thm
+
+8. What is the "user-agent" value used to download the non-executable file?
+> Nim httpclient/1.6.8
+
+9. Export objects from the PCAP file.
+Calculate the file hashes.
+
+What is the sha256 hash value of the executable file?
+
+> 0ce160a54d10f8e81448d0360af5c2948ff6a4dbb493fe4be756fc3e2c3f900f
+
+10. Search the hash value of the executable file on VirusTotal.
+Navigate to the "Behaviour" section.
+There are multiple IP addresses associated with this file.
+
+What are the connected IP addresses?
+Enter the IP addressed defanged and in numerical order. (format: IPADDR,IPADDR)
+
+
+Please note that the VT entry changed since the official walkthrough video was recorded - check the VT website to get all the IP addresses you need! 
+
+> 20[.]99[.]133[.]109,20[.]99[.]184[.]37,23[.]216[.]147[.]64,23[.]216[.]147[.]76
+
+---
+
+## Day 14
+
+1. What is the office number of Elf Pivot McRed?
+> 134
+
+2. Not only profile pages but also stored images are vulnerable. Start with a URL of a valid profile image; what is the hidden flag?
+> THM{CLOSE_THE_DOOR}
+
+---
+
+## Day 15
+
+1. What is the name given to file uploads that allow threat actors to upload any files that they want?
+> Unrestricted
+
+2. What is the title of the web application developed by Santa's freelancer?
+> SantaSideKick2
+
+3. What is the value of the flag stored in the HR Elf's Documents directory?
+> THM{Naughty.File.Uploads.Can.Get.You.RCE}
+
+4. What defence technique can be implemented to ensure that specific file types can be uploaded?
+> File Extension Validation
+
+5. What defence technique can be used to make sure the threat actor cannot recover their file again by simply using the file name?
+> File Renaming
+
+
+6. What defence technique can be used to make sure malicious files that can hurt elves are not uploaded?
+> Malware Scanning
+
+---
+
+## Day 16
+
+1. What is the value of Flag1?
+> THM{McCode, Elf McCode}
+
+2. What is the value of Flag2?
+> THM{KodeNRoll}
+
+3. What is the value of Flag3?
+> THM{Are we secure yet?}
+
+4. What is the value of Flag4?
+> THM{SQLi_who???}
+
+
+---
+
+## Day 17
+
+
+1. Filtering for Usernames: How many usernames fit the syntax above?
+> 8
+
+2. Filtering for Usernames: One username consists of a readable word concatenated with a number. What is it?
+> User35
+
+3. Filtering for Emails: How many emails fit the syntax above?
+> 11
+
+4. Filtering for Emails: How many unique domains are there?
+> 8
+
+5. Filtering for Emails: What is the domain of the email with the local-part "lewisham44"?
+> amg.com
+
+6. Filtering for Emails: What is the domain of the email with the local-part "maxximax"?
+> fedfull.com
+
+7. Filtering for Emails: What is the local-part of the email with the domain name "hotmail.com"?
+> hussain.volt
+
+8. Filtering for URLs: How many URLs fit the syntax provided?
+> 16
+
+9.Filtering for URLs: How many of these URLs start with "https"?
+> 7
+
+---
+
+## Day 18
+
+1. What is the Challenge #1 flag?
+> THM{n0t_just_your_u$ser}
+
+2. From the Challenge 1 log, what user account was created?
+> BanditYetiMini
+
+3. What is the Challenge #2 flag?
+> THM{wh@t_1s_Runn1ng_H3r3}
+
+4. What was the User's path in the Challenge #2 log file?
+> SIGMA_AOC2022\Bandit Yeti
+
+5. What is the Challenge #3 flag?
+> THM{sch3dule_0npo1nt_101}
+
+6. What was the MD5 hash associated with Challenge #3 logs?
+> 2F6CE97FAF2D5EEA919E4393BDD416A7
+
+---
+
+## Day 19
+
+1. What device can be used to probe the signals being sent on electrical wires between two devices?
+> Logic Analyser
+
+2. USART is faster than SPI for communication? (Yea,Nay)
+> Nay
+
+3. USART communication uses fewer wires than SPI? (Yea,Nay)
+> Yea
+
+4. USART is faster than I2C for communication? (Yea,Nay)
+> Nay
+
+5. I2C uses more wires than SPI for communication? (Yea,Nay)
+> Nay
+
+6. SPI is faster than I2C for communication? (Yea,Nay)
+> Yea
+
+7. What is the maximum number of devices that can be connected on a single pair of I2C lines?
+> 1008
+
+8. What is the new baud rate that is negotiated between the microprocessor and ESP32 chip?
+> 9600
+
+9. What is the flag that is transmitted once the new baud rate was accepted?
+> THM{Hacking.Hardware.Is.Fun}
+
+---
+
+## Day 20 
+
+1. What is the flag value after reversing the file firmwarev2.2-encrypted.gpg?
+
+Note: The flag contains underscores - if you're seeing spaces, the underscores might not be rendering.
+
+> THM{WE_GOT_THE_FIRMWARE_CODE}
+
+2. What is the Paraphrase value for the binary firmwarev1.0_unsigned?
+> Santa@2022
+
+3. After reversing the encrypted firmware, can you find the build number for rootfs?
+> 2.6.31
+
+---
+
+## Day 21
+
+1. What port is Mosquitto running on? 
+> 1883
+
+2. Is the device/init topic enumerated by Nmap during a script scan of all ports? (y/n)
+> y
+
+3. What Mosquitto version is the device using?
+> 1.6.9
+
+4. What flag is obtained from viewing the RTSP stream? 
+> THM{UR_CAMERA_IS_MINE}
+
+---
+
+## Day 22
+
+1. Follow the instructions in the attached static site to help McSkidy reduce her attack surface against attacks from the Yeti. Use the flag as an answer to complete the task.
+> THM{4TT4CK SURF4C3 R3DUC3D}
+
+---
+
+## Day 23
+
+1. Case 1: What is the password for Santa’s Vault?
+> S3cr3tV@ultPW
+
+2. Case 1: What is the Flag?
+> THM{EZ_fl@6!}
+
+3. Case 2: What is Santa’s favourite thing?
+> MilkAndCookies
+
+4. Case 2: What is the password for Santa’s Vault?
+> 3XtrR@_S3cr3tV@ultPW
+
+5. Case 2: What is the Flag?
+> THM{m0@r_5t3pS_n0w!}
+
+6.Case 3: What is the Executive Assistant’s favourite thing?
+> BanoffeePie
+
+7. Case 3: What is Santa’s previous password?
+> H0tCh0coL@t3_01
+
+8. Case 3: What is Santa’s current password?
+> H0tCh0coL@t3_02
+
+9. Case 3: What is the 1st part of the vault’s password?
+> N3w4nd1m
+
+10. Case 3: What is the 2nd part of the vault’s password?
+> Pr0v3dV@ultPW
+
+11. Case 3: What is the password for Santa’s Vault?
+> N3w4nd1mPr0v3dV@ultPW
+
+12. Case 3: What is the Flag?
+> THM{B@d_Y3t1_1s_n@u6hty}
+
+13. What is Santa's Code?
+> 2845
+
+14. Mission ELFPossible: What is the Abominable for a Day Flag?
+> THM{D3f3n5e_1n_D3pth_1s_k00L!!}
+
+---
+
+## Day 24
+> THM{AoC2022!thank_you!}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
